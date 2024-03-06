@@ -1,0 +1,159 @@
+h1 {
+  text-align: center;
+}
+
+.todo-wrapper {
+  padding: 7%;
+  background: #353434;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  overflow-y: auto;
+  box-shadow: 0px 5px 7px rgb(68, 65, 65);
+  border-bottom: 1px solid gray;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(79, 76, 76);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.todo-wrapper .todo-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.todo-list-item input {
+  background-color: white;
+  padding: 10px;
+  width: 250px;
+  color: black;
+}
+
+.todo-list-item input:focus {
+  border: 2px solid rgb(2, 247, 51);
+  outline: none;
+}
+
+.todo-list-item .primaryBtn {
+  background-color: rgb(2, 247, 51);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  margin-top: 25px;
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.todo-list-item .primaryBtn:hover {
+  background-color: rgb(6, 168, 38);
+}
+
+.todo-wrapper .btn-area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-area .scrBtn {
+  background-color: rgb(79, 84, 80);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  margin-top: 25px;
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(2, 247, 51);
+}
+
+.todo-list {
+  background-color: rgb(75, 116, 85);
+  margin: 10px 5px;
+  padding: 10px;
+}
+
+.todo-list .todo-list-item {
+  background-color: rgb(29, 46, 33);
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 10px;
+  position: relative;
+  justify-content: space-around;
+}
+
+.todo-list-item .todo-title {
+  color: goldenrod;
+}
+
+.todo-list-item .button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list-item button {
+  margin: 5px;
+  color: red;
+
+}
+
+.todo-list-item .completed {
+  color: rgb(250, 255, 249);
+  background-color: rgb(65, 133, 110);
+
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
