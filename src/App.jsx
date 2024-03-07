@@ -3,7 +3,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
 import Navbar from "./components/Navbar/Navbar.jsx"
-const Todo = lazy (() => import('./components/Todo/Todo'));
+const Todo = lazy(() => import('./components/Todo/Todo'));
 const Stopwatch = lazy(() => import('./components/Stopwatch/Stopwatch.jsx'));
 const DigitalClock = lazy(() => import('./components/DigitalClock/DigitalClock.jsx'));
 const PostList = lazy(() => import('./components/PostList/PostList.jsx'));
@@ -13,14 +13,15 @@ function App() {
     <>
       <Navbar />
       <main>
-      <Suspense fallback={<div>Loading Components...</div>}>
-        <Routes>
-          <Route path='/' exact element={<Todo />} />
-          <Route path='/Stopwatch' element={<Stopwatch />} />
-          <Route path='/DigitalClock' element={<DigitalClock />} />
-          <Route path='/PostList' element={<PostList />} />
-        </Routes>
-      </Suspense>
+        <Suspense fallback={<div>Loading Components...</div>}>
+          <Routes>
+            <Route path='/' exact element={<Todo />} />
+            <Route path='/Stopwatch' element={<Stopwatch />} />
+            <Route path='/DigitalClock' element={<DigitalClock />} />
+            <Route path='/PostList' element={<PostList />} />
+            <Route path='*' element={<h3 className='page-not-found'>ERROR : PAGE NOT FOUND, Verify Your URL !!</h3>} />
+          </Routes>
+        </Suspense>
       </main>
     </>
   )
