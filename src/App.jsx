@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar/Navbar.jsx"
 import Stopwatch from './components/Stopwatch/Stopwatch.jsx';
 import DigitalClock from './components/DigitalClock/DigitalClock.jsx';
+import PostList from './components/PostList/PostList.jsx';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' exact element={<Todo/>} />
         <Route path='/Stopwatch' element={<Stopwatch/>} />
         <Route path='/DigitalClock' element={<DigitalClock/>} />
+        <Route path='/PostList' element={<PostList/>} />
       </Routes>
     </>
   )
